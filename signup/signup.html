@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/signup.css" />
+    <script defer src="./js/signup.js"></script>
     <title>회원가입</title>
   </head>
   <body>
     <div class="container">
       <h1>회원 가입을 환영합니다.</h1>
-      <form method="get">
+      <form onsubmit="check_sign(event)" method="get">
         <fieldset>
           <legend>사용자정보</legend>
           <ul>
@@ -57,23 +59,23 @@
         </fieldset>
         <fieldset>
           <legend>이벤트와 새로운 소식</legend>
-          <input type="radio" name="mail" id="mail_yes" value="yes" checked>
-          <label for="mail_yes">메일 수신</label>          
-          <input type="radio" name="mail" id="mail_no" value="no">
-          <label for="mail_no">메일 수신</label>          
+          <input type="radio" name="mail" id="mail_yes" value="yes" checked />
+          <label for="mail_yes">메일 수신</label>
+          <input type="radio" name="mail" id="mail_no" value="no" />
+          <label for="mail_no">메일수신 안함</label>
         </fieldset>
         <fieldset>
           <legend>이동수단</legend>
-          <input type="checkbox" id="bus" name="bus">
+          <input type="checkbox" id="bus" name="bus" />
           <label for="bus">버스</label>
-          <input type="checkbox" id="metro" name="metro">
+          <input type="checkbox" id="metro" name="metro" />
           <label for="metro">지하철</label>
-          <input type="checkbox" id="walking" name="walking">
+          <input type="checkbox" id="walking" name="walking" />
           <label for="walking">도보</label>
         </fieldset>
         <div class="buttons">
-          <input type="submit" value="가입하기">
-          <input type="reset" value="취소"> 
+          <input type="submit" value="가입하기" />
+          <input type="reset" value="취소" />
         </div>
       </form>
     </div>
